@@ -1,0 +1,3 @@
+método,características,parâmetros treinados,erro no teste (%)
+1-NN sobre pixels (casamento de modelos),nenhuma (pixels),0,3.09
+LeNet-5 (15 épocas),aprendidas (convolução),61706,1.32

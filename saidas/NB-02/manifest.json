@@ -1,0 +1,26 @@
+{
+  "notebook": "NB-02",
+  "data": "2026-11-10T14:20:27",
+  "dry_run": false,
+  "imagem": "~/text_tcc_unb/unbtex-example/figuras/1680-069.png",
+  "imagem_sha256": "8fb2ef3ef1b9f145955295246762ba6a69f69b3d71b9be9683a393f5106c6066",
+  "gabarito_sha256": "80d42f8531f986e6a639e6bd384ee4fc369238d4377a6a3fc7f47ba23fe736d0",
+  "prompt": "Only Transcribe into Brazilian Portuguese",
+  "temperature": 0.0,
+  "max_tokens": 4096,
+  "max_usd": 1.0,
+  "modelos_executados": [
+    "google/gemini-3.8-flash",
+    "google/gemini-2.5-flash",
+    "anthropic/claude-haiku-5.5",
+    "anthropic/claude-sonnet-5.5",
+    "openai/gpt-6-luna",
+    "qwen/qwen3-vl-235b-a22b-instruct",
+    "mistralai/mistral-small-3.2-24b-instruct",
+    "z-ai/glm-5.3-flash"
+  ],
+  "modelos_indisponiveis": [],
+  "fonte_modelos": "engines/openrouter_models.json",
+  "custo_novo_usd": 0,
+  "obs": "A plataforma reenvia a imagem como JPEG (qualidade 92); o script original do TCC enviava PNG."
+}

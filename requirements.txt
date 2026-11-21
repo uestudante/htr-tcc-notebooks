@@ -1,0 +1,13 @@
+# Bibliotecas usadas pelos notebooks. Os notebooks dependem também da plataforma htr_workbench,
+# que não é pública (ver README); esta lista serve para ler e adaptar o código.
+jupyterlab>=4.2
+matplotlib>=3.8
+numpy>=1.26
+pandas>=2.2
+opencv-python-headless>=4.9
+rapidfuzz>=3.6
+requests>=2.31
+scikit-learn>=1.4
+hmmlearn>=0.3
+torch>=2.2
+h5py>=3.10

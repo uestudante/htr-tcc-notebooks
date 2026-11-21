@@ -1,0 +1,5 @@
+representação,dimensão,1-NN,SVM (RBF)
+pixels,3072,0.746,0.694
+HOG,1188,0.79,0.802
+Gabor,192,0.853,0.889
+Hu + proporção,8,0.504,0.655

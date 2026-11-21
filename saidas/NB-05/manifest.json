@@ -1,0 +1,129 @@
+{
+  "notebook": "NB-05",
+  "data": "2026-11-15T13:22:49",
+  "imagem": "~/text_tcc_unb/unbtex-example/figuras/1680-069.png",
+  "imagem_sha256": "8fb2ef3ef1b9f145955295246762ba6a69f69b3d71b9be9683a393f5106c6066",
+  "gabarito_sha256": "80d42f8531f986e6a639e6bd384ee4fc369238d4377a6a3fc7f47ba23fe736d0",
+  "condicoes": {
+    "original": {},
+    "completo": {
+      "grayscale": true,
+      "normalize": true,
+      "noise_reduction": true,
+      "deskew": true,
+      "binarize": true,
+      "upscale": true,
+      "sharpen": true
+    },
+    "cinza": {
+      "grayscale": true
+    },
+    "normalizacao": {
+      "normalize": true
+    },
+    "ruido": {
+      "noise_reduction": true
+    },
+    "deskew": {
+      "deskew": true
+    },
+    "binarizacao": {
+      "binarize": true
+    },
+    "ampliacao": {
+      "upscale": true
+    },
+    "nitidez": {
+      "sharpen": true
+    }
+  },
+  "motores": [
+    "EasyOCR",
+    "Ollama|deepseek-ocr:latest",
+    "Ollama|glm-ocr:q8_0",
+    "Ollama|llava:latest",
+    "Ollama|richardyoung/olmocr2:7b-q8",
+    "OpenRouter|anthropic/claude-haiku-5.5",
+    "OpenRouter|anthropic/claude-sonnet-5.5",
+    "OpenRouter|google/gemini-2.5-flash",
+    "OpenRouter|google/gemini-3.8-flash",
+    "OpenRouter|mistralai/mistral-small-3.2-24b-instruct",
+    "OpenRouter|openai/gpt-6-luna",
+    "OpenRouter|qwen/qwen3-vl-235b-a22b-instruct",
+    "OpenRouter|z-ai/glm-5.3-flash",
+    "Tesseract"
+  ],
+  "execucoes": 121,
+  "celulas_sem_resultado": 5,
+  "periodo_execucao": [
+    "2026-11-15T12:41:16",
+    "2026-11-15T13:18:17"
+  ],
+  "custo_total_usd": 0.265993045,
+  "parametros_por_motor": {
+    "EasyOCR": {
+      "lang_list": "pt",
+      "detail": "0 – somente texto",
+      "gpu": false
+    },
+    "Ollama": {
+      "model": "deepseek-ocr:latest",
+      "prompt": "Você é um especialista em leitura de texto manuscrito. Transcreva EXATAMENTE o texto manuscrito visível nesta imagem. Retorne apenas o texto transcrito, sem explicações ou comentários.",
+      "temperature": 0.0,
+      "max_tokens": 4096,
+      "repeat_penalty": 1.15
+    },
+    "OpenRouter": {
+      "model": "anthropic/claude-haiku-5.5",
+      "prompt": "Você é um especialista em leitura de texto manuscrito. Transcreva EXATAMENTE o texto manuscrito visível nesta imagem. Retorne apenas o texto transcrito, sem explicações ou comentários.",
+      "temperature": 0.0,
+      "max_tokens": 4096
+    },
+    "Tesseract": {
+      "lang": "por",
+      "psm": 6,
+      "oem": 3
+    }
+  },
+  "ambiente_por_motor": {
+    "EasyOCR": {
+      "mode": "node",
+      "node": "EasyOCR",
+      "host": "localhost",
+      "runtime": "Cloud Run",
+      "device": "CPU"
+    },
+    "Ollama": {
+      "mode": "node",
+      "node": "Ollama",
+      "host": "localhost",
+      "runtime": "Cloud Run",
+      "device": "GPU"
+    },
+    "OpenRouter": {
+      "mode": "embedded",
+      "node": null,
+      "host": "<vm-dev>",
+      "runtime": "Local",
+      "device": "CPU"
+    },
+    "Tesseract": {
+      "mode": "node",
+      "node": "Tesseract",
+      "host": "localhost",
+      "runtime": "Cloud Run",
+      "device": "CPU"
+    }
+  },
+  "bertscore_modelo": "bert-base-multilingual-cased",
+  "juiz_modelo": "qwen2.5:7b-instruct",
+  "arquivos": [
+    "resultados_finais.csv",
+    "fig_cer_tempo.png",
+    "fig_cer_wer_original.png",
+    "fig_efeito_preproc.png",
+    "tabela_cer_condicoes.tex",
+    "tabela_resumo.tex",
+    "tabela_wer_condicoes.tex"
+  ]
+}

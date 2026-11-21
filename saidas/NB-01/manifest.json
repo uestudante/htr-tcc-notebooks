@@ -1,0 +1,202 @@
+{
+  "notebook": "NB-01",
+  "data": "2026-11-10T22:07:38",
+  "entrada": "~/text_tcc_unb/unbtex-example/figuras/1680-069.png",
+  "dimensoes_entrada": [
+    1040,
+    1166
+  ],
+  "janela_centro_yx": [
+    21,
+    321
+  ],
+  "commit": "2c28af5",
+  "arvore_suja": true,
+  "versoes": {
+    "python": "3.11.2",
+    "opencv": "5.0.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2"
+  },
+  "pipeline_por_etapa": {
+    "00_original": {
+      "grayscale": false,
+      "normalize": false,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": false,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": false,
+      "binarize": false,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": false,
+      "upscale_factor": 2.0,
+      "sharpen": false
+    },
+    "01_cinza": {
+      "grayscale": true,
+      "normalize": false,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": false,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": false,
+      "binarize": false,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": false,
+      "upscale_factor": 2.0,
+      "sharpen": false
+    },
+    "02_normalizacao": {
+      "grayscale": true,
+      "normalize": true,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": false,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": false,
+      "binarize": false,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": false,
+      "upscale_factor": 2.0,
+      "sharpen": false
+    },
+    "03_ruido": {
+      "grayscale": true,
+      "normalize": true,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": true,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": false,
+      "binarize": false,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": false,
+      "upscale_factor": 2.0,
+      "sharpen": false
+    },
+    "04_deskew": {
+      "grayscale": true,
+      "normalize": true,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": true,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": true,
+      "binarize": false,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": false,
+      "upscale_factor": 2.0,
+      "sharpen": false
+    },
+    "05_binarizacao": {
+      "grayscale": true,
+      "normalize": true,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": true,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": true,
+      "binarize": true,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": false,
+      "upscale_factor": 2.0,
+      "sharpen": false
+    },
+    "06_upscale": {
+      "grayscale": true,
+      "normalize": true,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": true,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": true,
+      "binarize": true,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": true,
+      "upscale_factor": 2.0,
+      "sharpen": false
+    },
+    "07_nitidez": {
+      "grayscale": true,
+      "normalize": true,
+      "normalize_alpha": 0,
+      "normalize_beta": 255,
+      "noise_reduction": true,
+      "noise_method": "gaussian",
+      "noise_ksize": 5,
+      "noise_sigma": 0,
+      "deskew": true,
+      "binarize": true,
+      "binarize_method": "otsu",
+      "binarize_threshold": 127,
+      "binarize_block_size": 11,
+      "binarize_C": 2,
+      "upscale": true,
+      "upscale_factor": 2.0,
+      "sharpen": true
+    }
+  },
+  "ilustrativas": {
+    "02_normalizacao": true,
+    "04_deskew": true
+  },
+  "normalizacao_ilustrativa": {
+    "antes_min_max": [
+      90,
+      200
+    ],
+    "depois_min_max": [
+      0,
+      255
+    ]
+  },
+  "deskew_ilustrativo": {
+    "graus_aplicados": 3.0,
+    "angulo_estimado": -3.15,
+    "angulo_residual": -0.0,
+    "pixels_alterados": 1099345
+  },
+  "normalizacao_real_max_dif": 1,
+  "deskew_diagnostico": {
+    "angulo_estimado_pagina": -0.15,
+    "pixels_alterados_pagina": 0,
+    "pixels_alterados_copia_girada_3graus": 1099345,
+    "total_pixels": 1212640
+  }
+}

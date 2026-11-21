@@ -1,0 +1,51 @@
+{
+ "notebook": "NB-12",
+ "data": "2026-11-19T22:34:03",
+ "tema": "O estigma associado às doenças mentais na sociedade brasileira",
+ "juizes": [
+  "anthropic/claude-sonnet-5.5",
+  "openai/gpt-6.1-terra",
+  "google/gemini-4-carbon",
+  "qwen/qwen3-235b-a22b-2507"
+ ],
+ "e1_itens": [
+  "gabarito",
+  "EasyOCR",
+  "Ollama|glm-ocr:q8_0",
+  "Ollama|richardyoung/olmocr2:7b-q8",
+  "OpenRouter|anthropic/claude-haiku-5.5",
+  "OpenRouter|anthropic/claude-sonnet-5.5",
+  "OpenRouter|google/gemini-2.5-flash",
+  "OpenRouter|google/gemini-3.8-flash",
+  "OpenRouter|mistralai/mistral-small-3.2-24b-instruct",
+  "OpenRouter|openai/gpt-6-luna",
+  "OpenRouter|qwen/qwen3-vl-235b-a22b-instruct",
+  "OpenRouter|z-ai/glm-5.3-flash",
+  "Tesseract"
+ ],
+ "e2_paginas": [
+  "4100-018",
+  "4110-028",
+  "0673-064",
+  "2107-057",
+  "7292-094",
+  "6114-022",
+  "4106-024",
+  "2495-038",
+  "6109-017",
+  "3516-020",
+  "1667-056",
+  "7280-082",
+  "1436-040",
+  "2188-045",
+  "7865-041",
+  "0959-044",
+  "2105-055",
+  "1439-043",
+  "1623-012",
+  "0675-066"
+ ],
+ "reps_e1": 3,
+ "temperature": 0.0,
+ "custo_usd": 3.2891
+}

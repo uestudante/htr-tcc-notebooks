@@ -1,0 +1,31 @@
+{
+  "notebook": "NB-03",
+  "commit": "531bbad",
+  "arvore_suja": true,
+  "python": "3.11.2",
+  "usar_semanticas": true,
+  "config": {
+    "bertscore_modelo": "bert-base-multilingual-cased",
+    "bertscore_camada": 9,
+    "judge_model": "qwen2.5:7b-instruct",
+    "ollama_versao": "0.34.4",
+    "bertscore_url_configurada": true,
+    "amostra": {
+      "bertscore": {
+        "precision": 0.8912271857261658,
+        "recall": 0.8781874179840088,
+        "f1": 0.8846591711044312,
+        "model": "bert-base-multilingual-cased"
+      },
+      "juiz": {
+        "fidelity": 3,
+        "completeness": 4,
+        "correctness": 2,
+        "overall": 3.0,
+        "comment": "Palavra 'rato' foi transcrita como 'rata', e 'rei' foi adicionado como 'rei velho', alterando o sentido.",
+        "model": "qwen2.5:7b-instruct"
+      },
+      "erros": {}
+    }
+  }
+}

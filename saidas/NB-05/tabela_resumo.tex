@@ -1,0 +1,29 @@
+\begin{table}[H]
+\IBGEtab{%
+    \caption{Métricas por motor na página 1680-069, sem pré-processamento}%
+    \label{tab:nb05_resumo}
+}{%
+    \begin{tabular}{@{}llccccccc@{}}
+    \toprule
+    \textbf{Modelo} & \textbf{Motor} & \textbf{CER} & \textbf{WER} & \textbf{Cosseno} & \textbf{BERTScore} & \textbf{Juiz} & \textbf{Tempo (s)} & \textbf{Custo (US\$)} \\ \midrule
+    claude-sonnet-5.5 & OpenRouter & 0,005 & 0,047 & 0,999 & 0,995 & 5,00 & 5,5 & 0,0131 \\
+    claude-haiku-5.5 & OpenRouter & 0,009 & 0,052 & 0,993 & 0,978 & 5,00 & 8,8 & 0,0014 \\
+    glm-5.3-flash & OpenRouter & 0,009 & 0,047 & 0,993 & 0,978 & 5,00 & 29,3 & 0,0017 \\
+    gpt-6-luna & OpenRouter & 0,010 & 0,052 & 0,993 & 0,976 & 5,00 & 18,3 & 0,0011 \\
+    gemini-2.5-flash & OpenRouter & 0,011 & 0,031 & 0,996 & 0,989 & 5,00 & 3,0 & 0,0015 \\
+    qwen3-vl-235b-a22b-instruct & OpenRouter & 0,017 & 0,060 & 0,989 & 0,973 & 5,00 & 23,0 & 0,0015 \\
+    olmocr2:7b-q8 & Ollama & 0,018 & 0,076 & 0,988 & 0,971 & 4,00 & 109,4 & -- \\
+    gemini-3.8-flash & OpenRouter & 0,031 & 0,071 & 0,992 & 0,964 & 4,00 & 17,8 & 0,0109 \\
+    mistral-small-3.2-24b-instruct & OpenRouter & 0,035 & 0,100 & 0,985 & 0,967 & 4,00 & 4,8 & 0,0003 \\
+    Tesseract & Tesseract & 0,308 & 0,777 & 0,711 & 0,642 & 1,67 & 19,8 & -- \\
+    EasyOCR & EasyOCR & 0,615 & 0,979 & 0,151 & 0,500 & 1,67 & 42,2 & -- \\
+    llava:latest & Ollama & 0,973 & 0,992 & 0,110 & 0,594 & 1,00 & 1,1 & -- \\
+    deepseek-ocr:latest & Ollama & 1,000 & 1,000 & 0,000 & -- & -- & 1,5 & -- \\
+    glm-ocr:q8\_0 & Ollama & 2,354 & 2,483 & 0,904 & 0,924 & 2,67 & 18,0 & -- \\
+    \bottomrule
+\end{tabular}%
+}{%
+    \fonte{Autor}%
+    \nota[Observação]{Ordenação crescente de CER. BERTScore: F1. Juiz: média das três notas (1 a 5). Tempo medido pelo motor, sem a carga do modelo na GPU. Custo informado apenas para os modelos cobrados por uso.}%
+}
+\end{table}

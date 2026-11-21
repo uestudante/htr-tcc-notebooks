@@ -1,0 +1,39 @@
+{
+ "notebook": "NB-04",
+ "data": "2026-11-20T01:24:40",
+ "artefatos": "~/bressay_treino_resultados",
+ "run_id": "5a5a8f579cb14ed8960c0f888ea99b83",
+ "linhas_teste": 5916,
+ "metricas": [
+  {
+   "protocolo": "plataforma, global (micro)",
+   "cer": 0.08957659407603703,
+   "wer": 0.24932173489871648
+  },
+  {
+   "protocolo": "plataforma, média por linha",
+   "cer": 0.08700568963018455,
+   "wer": 0.24774491483219574
+  },
+  {
+   "protocolo": "pySarah, média por linha",
+   "cer": 0.08696455796624006,
+   "wer": 0.2181932722140212
+  }
+ ],
+ "melhor_epoca": 257,
+ "epocas": 277,
+ "inferencia_cpu": {
+  "tf": "2.19.0",
+  "dispositivo": "CPU",
+  "cpus": 4,
+  "beam_width": 32,
+  "batch_size": 16,
+  "n": 100,
+  "tempo_carga_s": 5.421355507001863,
+  "tempo_inferencia_s": 37.10934891599754,
+  "tempo_por_linha_s": 0.3710934891599754
+ },
+ "inferencia_iguais_gpu": 100,
+ "seed": 0
+}

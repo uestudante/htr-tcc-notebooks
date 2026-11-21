@@ -1,0 +1,21 @@
+\begin{table}[H]
+\IBGEtab{%
+    \caption{Concordância entre pares de juízes em 20 redações do conjunto de teste do BRESSAY}%
+    \label{tab:nb12_e2}
+}{%
+    \begin{tabular}{@{}lrrrrrrr@{}}
+    \toprule
+    \textbf{Par de juízes} & \textbf{Discrep. (\%)} & \textbf{|$\Delta$ total|} & \textbf{QWK C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} \\ \midrule
+    claude-sonnet-5.5 × gpt-6.1-terra & 75 & 136 & 0,68 & 0,25 & 0,40 & 0,29 & -0,07 \\
+    claude-sonnet-5.5 × gemini-4-carbon & 50 & 134 & 0,81 & 0,03 & 0,21 & 0,41 & -0,03 \\
+    claude-sonnet-5.5 × qwen3-235b-a22b-2507 & 70 & 130 & 0,12 & 0,26 & 0,26 & 0,23 & 0,34 \\
+    gpt-6.1-terra × gemini-4-carbon & 20 & 70 & 0,64 & 0,23 & 0,36 & 0,35 & -0,08 \\
+    gpt-6.1-terra × qwen3-235b-a22b-2507 & 30 & 86 & 0,05 & 0,10 & 0,23 & 0,20 & -0,03 \\
+    gemini-4-carbon × qwen3-235b-a22b-2507 & 10 & 64 & 0,10 & 0,07 & 0,13 & 0,23 & 0,03 \\
+    \bottomrule
+\end{tabular}%
+}{%
+    \fonte{Autor}%
+    \nota[Observação]{Discrepância pela regra do ENEM: notas totais diferentes em mais de 100 pontos ou alguma competência em mais de 80. QWK: kappa ponderado quadrático. NB-12.}%
+}
+\end{table}

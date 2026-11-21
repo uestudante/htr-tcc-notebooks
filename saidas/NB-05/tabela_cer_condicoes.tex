@@ -1,0 +1,29 @@
+\begin{table}[H]
+\IBGEtab{%
+    \caption{CER por motor e por condição de pré-processamento na página 1680-069}%
+    \label{tab:nb05_cer_condicoes}
+}{%
+    \begin{tabular}{@{}lccccccccc@{}}
+    \toprule
+    \textbf{Modelo} & \rotatebox{70}{\textbf{Original}} & \rotatebox{70}{\textbf{Todas as etapas}} & \rotatebox{70}{\textbf{Tons de cinza}} & \rotatebox{70}{\textbf{Normalização}} & \rotatebox{70}{\textbf{Redução de ruído}} & \rotatebox{70}{\textbf{Correção de inclinação}} & \rotatebox{70}{\textbf{Binarização}} & \rotatebox{70}{\textbf{Ampliação (2x)}} & \rotatebox{70}{\textbf{Nitidez}} \\ \midrule
+    claude-sonnet-5.5 & 0,005 & 0,013 & 0,005 & 0,007 & 0,004 & 0,007 & 0,010 & 0,005 & 0,009 \\
+    claude-haiku-5.5 & 0,009 & 0,024 & 0,009 & 0,012 & 0,014 & 0,009 & 0,013 & 0,008 & 0,014 \\
+    glm-5.3-flash & 0,009 & 0,044 & -- & 0,009 & 0,010 & 0,018 & -- & 0,010 & -- \\
+    gpt-6-luna & 0,010 & 0,485 & 0,011 & 0,011 & 0,016 & 0,010 & 0,018 & 0,009 & 0,015 \\
+    gemini-2.5-flash & 0,011 & 0,014 & 0,011 & 0,012 & 0,013 & 0,011 & 0,019 & 0,010 & 0,013 \\
+    qwen3-vl-235b-a22b-instruct & 0,017 & 0,028 & 0,017 & 0,018 & 0,015 & 0,017 & 0,021 & 0,014 & 0,019 \\
+    olmocr2:7b-q8 & 0,018 & -- & 0,018 & 0,018 & 0,022 & 0,018 & 0,020 & -- & 0,018 \\
+    gemini-3.8-flash & 0,031 & 0,006 & 0,009 & 0,008 & 0,008 & 0,026 & 0,003 & 0,025 & 0,026 \\
+    mistral-small-3.2-24b-instruct & 0,035 & 0,093 & 0,046 & 0,031 & 0,046 & 0,031 & 0,040 & 0,026 & 0,043 \\
+    Tesseract & 0,308 & 0,624 & 0,308 & 0,307 & 0,598 & 0,308 & 0,340 & 0,417 & 0,327 \\
+    EasyOCR & 0,615 & 0,699 & 0,615 & 0,613 & 0,636 & 0,615 & 0,630 & 0,649 & 0,621 \\
+    llava:latest & 0,973 & 0,973 & 0,886 & 0,973 & 0,973 & 0,886 & 0,973 & 0,973 & 0,973 \\
+    deepseek-ocr:latest & 1,000 & 1,000 & 1,000 & 1,000 & 1,000 & 1,000 & 1,000 & 1,000 & 1,000 \\
+    glm-ocr:q8\_0 & 2,354 & 0,988 & 2,376 & 2,557 & 2,356 & 2,467 & 2,309 & 0,986 & 2,517 \\
+    \bottomrule
+\end{tabular}%
+}{%
+    \fonte{Autor}%
+    \nota[Observação]{Cada etapa foi aplicada isoladamente, com os parâmetros padrão da plataforma; ``Todas as etapas'' aplica as sete em sequência. Traço: execução sem resultado.}%
+}
+\end{table}
