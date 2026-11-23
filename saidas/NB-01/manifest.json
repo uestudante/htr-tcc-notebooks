@@ -1,6 +1,6 @@
 {
   "notebook": "NB-01",
-  "data": "2026-11-10T22:07:38",
+  "data": "2026-11-23T21:06:05",
   "entrada": "~/text_tcc_unb/unbtex-example/figuras/1680-069.png",
   "dimensoes_entrada": [
     1040,
@@ -10,7 +10,7 @@
     21,
     321
   ],
-  "commit": "2c28af5",
+  "commit": "d2f9f62",
   "arvore_suja": true,
   "versoes": {
     "python": "3.11.2",
@@ -191,6 +191,25 @@
     "angulo_estimado": -3.15,
     "angulo_residual": -0.0,
     "pixels_alterados": 1099345
+  },
+  "upscale": {
+    "fator": 2.0,
+    "regiao_yx": [
+      15,
+      315
+    ],
+    "janela_antes": 12,
+    "janela_depois": 24,
+    "dimensoes_antes": [
+      1040,
+      1166
+    ],
+    "dimensoes_depois": [
+      2080,
+      2332
+    ],
+    "tons_distintos_antes": 2,
+    "tons_distintos_depois": 59
   },
   "normalizacao_real_max_dif": 1,
   "deskew_diagnostico": {

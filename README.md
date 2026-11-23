@@ -22,7 +22,7 @@ que os resultados podem ser conferidos sem executá-lo.
 | NB-09 | Dados sequenciais: RNN, LSTM e GRU | Cap. 2 (didático) |
 | NB-10 | CTC e CRNN | Cap. 2 (didático) |
 | NB-11 | Atenção, Transformers e modelos de visão e linguagem | Cap. 2 (didático) |
-| NB-12 | Correção de redações por modelos de linguagem com a matriz do ENEM | Cap. 5 |
+| NB-12 | Correção de redações por modelos de linguagem com a matriz do ENEM | Cap. 6 |
 
 - `notebooks/`: os notebooks executados.
 - `saidas/NB-xx/`: figuras, tabelas e arquivos de resultado de cada notebook, com o `manifest.json` da execução
